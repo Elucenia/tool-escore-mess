@@ -1,0 +1,68 @@
+[
+  {
+    "label": "Fratura exposta, pulso reduzido, sem choque, 40 anos: 2 + 1 + 0 + 1 = 4",
+    "input": {
+      "energia": "2",
+      "isquemia": "1",
+      "tempo": "0",
+      "choque": "0",
+      "idade": "1"
+    },
+    "expected": {
+      "score": 4,
+      "level": "low"
+    },
+    "originalInput": {
+      "energia": "2",
+      "isquemia": "1",
+      "tempo": "0",
+      "choque": "0",
+      "idade": "1"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Alta energia, sem pulso há 8 h (2 × 2), hipotensão transitória, 25 anos: 3 + 4 + 1 + 0 = 8",
+    "input": {
+      "energia": "3",
+      "isquemia": "2",
+      "tempo": "1",
+      "choque": "1",
+      "idade": "0"
+    },
+    "expected": {
+      "score": 8,
+      "level": "high"
+    },
+    "originalInput": {
+      "energia": "3",
+      "isquemia": "2",
+      "tempo": "1",
+      "choque": "1",
+      "idade": "0"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Limite: alta energia, sem pulso &lt; 6 h, hipotensão transitória, 45 anos: 3 + 2 + 1 + 1 = 7",
+    "input": {
+      "energia": "3",
+      "isquemia": "2",
+      "tempo": "0",
+      "choque": "1",
+      "idade": "1"
+    },
+    "expected": {
+      "score": 7,
+      "level": "high"
+    },
+    "originalInput": {
+      "energia": "3",
+      "isquemia": "2",
+      "tempo": "0",
+      "choque": "1",
+      "idade": "1"
+    },
+    "expandedZeroOptions": []
+  }
+]

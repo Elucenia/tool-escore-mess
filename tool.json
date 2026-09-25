@@ -1,0 +1,183 @@
+{
+  "tool": {
+    "id": "escore-mess",
+    "title": "MESS (Mangled Extremity Severity Score)",
+    "short": "Gravidade do membro inferior esmagado",
+    "desc": "Escore MESS para trauma grave de membro inferior: energia da lesão, isquemia, choque e idade, com o corte de 7 pontos associado à amputação.",
+    "lead": "Gradua a gravidade do trauma complexo de membro inferior (lesão óssea, de partes moles e vascular) e ajuda a discutir salvamento versus amputação primária.",
+    "spec": [
+      "ortopedia-e-traumatologia",
+      "cirurgia-vascular",
+      "cirurgia-geral",
+      "medicina-de-emergencia",
+      "cirurgia-plastica"
+    ],
+    "fields": [
+      [
+        "energia",
+        "Lesão esquelética e de partes moles",
+        "sel",
+        {
+          "opts": {
+            "1": "Baixa energia (facada, fratura simples, projétil de arma curta)",
+            "2": "Média energia (fratura exposta ou múltipla, luxação)",
+            "3": "Alta energia (acidente em alta velocidade, projétil de fuzil)",
+            "4": "Muito alta energia (o anterior + contaminação grosseira)"
+          }
+        }
+      ],
+      [
+        "isquemia",
+        "Isquemia do membro",
+        "sel",
+        {
+          "opts": {
+            "0": "Sem isquemia",
+            "1": "Pulso reduzido ou ausente, perfusão normal",
+            "2": "Sem pulso, parestesias, enchimento capilar lento",
+            "3": "Membro frio, paralisado, insensível"
+          }
+        }
+      ],
+      [
+        "tempo",
+        "Isquemia há mais de 6 horas?",
+        "radio",
+        {
+          "opts": {
+            "0": "Não",
+            "1": "Sim"
+          }
+        }
+      ],
+      [
+        "choque",
+        "Choque",
+        "radio",
+        {
+          "opts": {
+            "0": "PAS sempre &gt; 90 mmHg",
+            "1": "Hipotensão transitória",
+            "2": "Hipotensão persistente"
+          }
+        }
+      ],
+      [
+        "idade",
+        "Idade",
+        "radio",
+        {
+          "opts": {
+            "0": "&lt; 30 anos",
+            "1": "30 a 50 anos",
+            "2": "&gt; 50 anos"
+          }
+        }
+      ]
+    ],
+    "formula": "<p>MESS = lesão esquelética/partes moles (1 a 4) + isquemia (0 a 3, <strong>dobrada</strong> se durar mais de 6 h) + choque (0 a 2) + idade (0 a 2).</p>",
+    "table": [
+      [
+        "MESS",
+        "Série original (Johansen 1990)"
+      ],
+      [
+        "&lt; 7",
+        "Membros salvos (média 4 a 5 pontos)"
+      ],
+      [
+        "≥ 7",
+        "Todos os membros evoluíram para amputação"
+      ]
+    ],
+    "tips": [
+      "Foi criado e validado em <strong>membro inferior</strong> e em série pequena (26 membros no estudo prospectivo): use como apoio, não como regra de amputação.",
+      "Estudos posteriores mostraram sensibilidade menor que a original; um MESS baixo não garante salvamento funcional.",
+      "Reavalie após a ressuscitação: choque e isquemia mudam com o tratamento e mudam o escore.",
+      "A perda de sensibilidade plantar por lesão do nervo tibial pesa na decisão, mas não entra no escore.",
+      "Decisão de amputação primária deve envolver ortopedia, cirurgia vascular e plástica, e ser registrada com fotos quando possível."
+    ],
+    "sources": [
+      [
+        "Johansen K et al. Objective criteria accurately predict amputation following lower extremity trauma. J Trauma, 1990.",
+        "https://doi.org/10.1097/00005373-199005000-00007"
+      ]
+    ],
+    "cases": [
+      [
+        "Fratura exposta, pulso reduzido, sem choque, 40 anos: 2 + 1 + 0 + 1 = 4",
+        {
+          "energia": "2",
+          "isquemia": "1",
+          "tempo": "0",
+          "choque": "0",
+          "idade": "1"
+        },
+        {
+          "score": 4,
+          "level": "low"
+        }
+      ],
+      [
+        "Alta energia, sem pulso há 8 h (2 × 2), hipotensão transitória, 25 anos: 3 + 4 + 1 + 0 = 8",
+        {
+          "energia": "3",
+          "isquemia": "2",
+          "tempo": "1",
+          "choque": "1",
+          "idade": "0"
+        },
+        {
+          "score": 8,
+          "level": "high"
+        }
+      ],
+      [
+        "Limite: alta energia, sem pulso &lt; 6 h, hipotensão transitória, 45 anos: 3 + 2 + 1 + 1 = 7",
+        {
+          "energia": "3",
+          "isquemia": "2",
+          "tempo": "0",
+          "choque": "1",
+          "idade": "1"
+        },
+        {
+          "score": 7,
+          "level": "high"
+        }
+      ]
+    ],
+    "batch": "cirurgia-sentidos",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "cirurgia-sentidos",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/cirurgia-sentidos.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 3,
+      "passed": 3,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/cirurgia-sentidos.php",
+    "sha256": "21fc91a9a8187a66496f68c2ac8fbdd20a65ceeea519687c963b857f72640866",
+    "bytes": 89063
+  },
+  "clinicalValidation": "not-performed"
+}
