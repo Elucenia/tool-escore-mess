@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-escore-mess · Elucenia · https://github.com/Elucenia/tool-escore-mess
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"escore-mess","title":"MESS (Mangled Extremity Severity Score)","fields":[["energia","Lesão esquelética e de partes moles","sel",{"opts":{"1":"Baixa energia (facada, fratura simples, projétil de arma curta)","2":"Média energia (fratura exposta ou múltipla, luxação)","3":"Alta energia (acidente em alta velocidade, projétil de fuzil)","4":"Muito alta energia (o anterior + contaminação grosseira)"}}],["isquemia","Isquemia do membro","sel",{"opts":{"0":"Sem isquemia","1":"Pulso reduzido ou ausente, perfusão normal","2":"Sem pulso, parestesias, enchimento capilar lento","3":"Membro frio, paralisado, insensível"}}],["tempo","Isquemia há mais de 6 horas?","radio",{"opts":{"0":"Não","1":"Sim"}}],["choque","Choque","radio",{"opts":{"0":"PAS sempre &gt; 90 mmHg","1":"Hipotensão transitória","2":"Hipotensão persistente"}}],["idade","Idade","radio",{"opts":{"0":"&lt; 30 anos","1":"30 a 50 anos","2":"&gt; 50 anos"}}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
