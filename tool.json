@@ -5,6 +5,7 @@
     "short": "Gravidade do membro inferior esmagado",
     "desc": "Escore MESS para trauma grave de membro inferior: energia da lesão, isquemia, choque e idade, com o corte de 7 pontos associado à amputação.",
     "lead": "Gradua a gravidade do trauma complexo de membro inferior (lesão óssea, de partes moles e vascular) e ajuda a discutir salvamento versus amputação primária.",
+    "kind": "Calculadora",
     "spec": [
       "ortopedia-e-traumatologia",
       "cirurgia-vascular",
@@ -76,27 +77,6 @@
       ]
     ],
     "formula": "<p>MESS = lesão esquelética/partes moles (1 a 4) + isquemia (0 a 3, <strong>dobrada</strong> se durar mais de 6 h) + choque (0 a 2) + idade (0 a 2).</p>",
-    "table": [
-      [
-        "MESS",
-        "Série original (Johansen 1990)"
-      ],
-      [
-        "&lt; 7",
-        "Membros salvos (média 4 a 5 pontos)"
-      ],
-      [
-        "≥ 7",
-        "Todos os membros evoluíram para amputação"
-      ]
-    ],
-    "tips": [
-      "Foi criado e validado em <strong>membro inferior</strong> e em série pequena (26 membros no estudo prospectivo): use como apoio, não como regra de amputação.",
-      "Estudos posteriores mostraram sensibilidade menor que a original; um MESS baixo não garante salvamento funcional.",
-      "Reavalie após a ressuscitação: choque e isquemia mudam com o tratamento e mudam o escore.",
-      "A perda de sensibilidade plantar por lesão do nervo tibial pesa na decisão, mas não entra no escore.",
-      "Decisão de amputação primária deve envolver ortopedia, cirurgia vascular e plástica, e ser registrada com fotos quando possível."
-    ],
     "sources": [
       [
         "Johansen K et al. Objective criteria accurately predict amputation following lower extremity trauma. J Trauma, 1990.",
@@ -147,9 +127,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -158,17 +135,513 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T19:21:17.222Z",
+      "total": 216,
+      "passed": 216,
+      "sourceRowCount": 216,
+      "uniqueApiInputCount": 216,
+      "sourceContextCount": 216,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "a8a4d574c9ff6feb44617353b6364bd3efe29f7c7c46c24725a6054fb0b3343d",
+        "total": 216,
+        "bankRowCount": 216,
+        "uniqueApiInputCount": 216,
+        "sourceContextCount": 216,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/villalta-mess-isth-independent-expectations-final27.json",
+            "sha256": "6d591e22f0fa891dc22b9833ad2f6ab2744cbdf1fe7025cfc872fa9c2e0ca42b"
+          },
+          {
+            "file": "reports/review-20261003/villalta-mess-isth-primary-observations-final27.cjs",
+            "sha256": "3c4045b2f9ab021d826973bd2820e437b67a1878b2b0f25ddc0993ea0a22a1d4"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/villalta-mess-isth-independent-source-check-final27.json",
+          "sha256": "b1de4431734f1a15edfa671bba7d0c0da5464a310c0983a2bf3e17cb6e2b453a"
+        },
+        "packagingRequirement": "Compose separately owned source/rubric/edition changes and fresh build/package/browser bindings before publication."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "sourceRows": 216,
+        "uniqueApiInputs": 216,
+        "duplicateRows": 0,
+        "expectationAudit": {
+          "file": "reports/review-20261003/villalta-mess-isth-independent-expectations-final27.json",
+          "sha256": "6d591e22f0fa891dc22b9833ad2f6ab2744cbdf1fe7025cfc872fa9c2e0ca42b"
+        }
+      },
+      "scope": "All216 combinations of source-table selected point codes and duration flag, exact integer total only.72 additional selected no-ischemia-zero combinations are identified separately as platform arithmetic extension, not original source-conforming examples. Raw elapsed time, blood pressure and age are not accepted by this form and are not classified here.",
+      "sources": [
+        {
+          "primaryObservations": {
+            "file": "reports/review-20261003/villalta-mess-isth-primary-observations-final27.cjs",
+            "sha256": "3c4045b2f9ab021d826973bd2820e437b67a1878b2b0f25ddc0993ea0a22a1d4"
+          },
+          "id": "escore-mess",
+          "sources": [
+            {
+              "doi": "10.1097/00005373-199005000-00007",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/2342140/",
+              "access": "Original1990 abstract indexed/read. Direct LWW fulltext request returned internal access error; no complete1990 table reading claimed.",
+              "readScope": "Abstract identifies four domains and small retrospective/prospective lower-limb injury cohorts; no universal amputational rule inferred."
+            },
+            {
+              "doi": "10.2147/VHRM.S15316",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3004513/",
+              "access": "Direct official PMC full HTML of Topal etal.2010 retrospective primary cohort.",
+              "readScope": "Table1, its ischemia footnote, Patients&Methods and limited abstract. Numeric table reproduces MESS use; this is not the1990 derivation article."
+            }
+          ],
+          "pointContract": {
+            "energyCodes": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "ischemiaCodesConfirmedIn2010Table": [
+              1,
+              2,
+              3
+            ],
+            "durationSelectedCode": [
+              0,
+              1
+            ],
+            "durationThreshold": {
+              "value": 6,
+              "unit": "hours",
+              "doubleOnlyIfGreater": true
+            },
+            "shockCodes": [
+              0,
+              1,
+              2
+            ],
+            "ageCodes": [
+              0,
+              1,
+              2
+            ],
+            "sourceAgeBands": [
+              "<30",
+              "30–50",
+              ">50"
+            ],
+            "sourceShockZeroDescription": "Systolic pressure persistently greater than90mmHg",
+            "formula": "energy + ischemia*(durationGreaterThan6?2:1) + shock + age",
+            "localZeroIschemiaExtension": "The current form also offers no ischemia=0; this option is absent from the directly read2010 Table1. Its zero contribution is tested separately as a platform extension, not source table conformity."
+          },
+          "scope": "All216 combinations of source-table selected point codes and duration flag, exact integer total only.72 additional selected no-ischemia-zero combinations are identified separately as platform arithmetic extension, not original source-conforming examples. Raw elapsed time, blood pressure and age are not accepted by this form and are not classified here.",
+          "limitations": "Original1990 full text was not obtained. The directly read2010 cohort used140surgically treated vascular-injury patients and excluded primary amputation without vascular repair. Numeric point replay does not approve amputational prediction, limb viability, descriptors or clinical interventions. More-than-six-hours is strict; an exact-six-hours continuous clinical input is not part of the selected-flag API."
+        }
+      ],
+      "evidencePath": "reports/review-20261003/villalta-mess-isth-independent-source-check-final27.json",
+      "evidenceSha256": "b1de4431734f1a15edfa671bba7d0c0da5464a310c0983a2bf3e17cb6e2b453a",
+      "independentPeer": {
+        "status": "passed-scoped-numeric",
+        "evidence": {
+          "file": "reports/review-20261003/villalta-mess-isth-independent-peer-verify-final27.json",
+          "sha256": "ff8bc18b4b06912aac258ce96b6c33cacbe5a1d484b58e52cc9d6679ad462028"
+        },
+        "scope": "Independently read selected primary tables, own frozen source-point expectations and three adapters Node/isolatedChromium. Source scope partial; local MESS72 zero cases separated; no clinical/rights/full-method approval."
+      },
+      "freshAdapterExecutions": 648,
+      "freshVmExecutions": 648,
+      "actualBrowserEvidenceScope": "Original isolated actual Chromium, each of the three exactly bound adapters, source-only rows. Separate local MESS72 extension is not part of this source bank.",
+      "implementations": [
+        {
+          "id": "escore-mess",
+          "app": "website",
+          "file": "apps/website/private/tool-code/escore-mess/calculator.js",
+          "sha256": "8f07ae325426cfab2797d66164af04f982cb27e51a0ec14d9851a244825cf331"
+        },
+        {
+          "id": "escore-mess",
+          "app": "dashboard",
+          "file": "apps/dashboard/private/tool-code/escore-mess/calculator.js",
+          "sha256": "8f07ae325426cfab2797d66164af04f982cb27e51a0ec14d9851a244825cf331"
+        },
+        {
+          "id": "escore-mess",
+          "app": "command-center",
+          "file": "apps/command-center/private/tool-code/escore-mess/calculator.js",
+          "sha256": "8f07ae325426cfab2797d66164af04f982cb27e51a0ec14d9851a244825cf331"
+        }
+      ],
+      "qualifications": [
+        "Original1990 full text was not obtained. The directly read2010 cohort used140surgically treated vascular-injury patients and excluded primary amputation without vascular repair. Numeric point replay does not approve amputational prediction, limb viability, descriptors or clinical interventions. More-than-six-hours is strict; an exact-six-hours continuous clinical input is not part of the selected-flag API.",
+        "MESS source bank excludes all72 local zero-ischemia examples. Those remain in the untouched original platform-extension receipt and are not counted as source conformity.",
+        "Only raw.score selected-point arithmetic is included. Clinical categories, main text, private level/verdict/note/rows, prognosis, diagnosis, management and unmeasured feature classification are excluded.",
+        "All source scenarios in this bank and the original donor reports remain retained. Mirror/runtime calculations do not multiply scenario counts. Inline four examples are a subset of the complete downloadable bank.",
+        "Source fields, rubric/edition labels, clinical scope notes and localization changes have separate ownership and must be composed without replacing whole catalogs. All862 historic fixtures/tolerances and approval flags remain unchanged.",
+        "Fresh source/build/packages and browser journey bindings are required before publication. No already-served website or final package proof is claimed by this preparation."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "metadataPackagingPeer": {
+        "status": "passed",
+        "scope": "Bounded independent review of the original source bank and its metadata/helper. Prospective code rebinding is separately re-executed below and requires the final composition peer; no human approval inferred.",
+        "peer": {
+          "file": "reports/review-20261003/villalta-mess-isth-bank-metadata-independent-review-western-final27.json",
+          "sha256": "8254f049e2cde19930dae4e5ef3b689175daa3a083b9a8a056d3650abcf8f1c5"
+        },
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "prospectiveSource27Bindings": [
+        {
+          "file": "apps/website/private/tool-code/escore-mess/calculator.js",
+          "sha256": "8f07ae325426cfab2797d66164af04f982cb27e51a0ec14d9851a244825cf331"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/escore-mess/calculator.js",
+          "sha256": "8f07ae325426cfab2797d66164af04f982cb27e51a0ec14d9851a244825cf331"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/escore-mess/calculator.js",
+          "sha256": "8f07ae325426cfab2797d66164af04f982cb27e51a0ec14d9851a244825cf331"
+        }
+      ],
+      "prospectiveSource27Replay": {
+        "file": "reports/review-20261003/source27-complete-bank-current-replay-root-r3.json",
+        "sha256": "44c601f27d3d5051a8d55a581381112b58df36c7c4b6cfd24ce1249b263d6a2b"
+      },
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "MESS/Johansen 1990:4 domínios, isquemia dobrada>6 h; sem ordem automática amputação",
+    "implementationVersion": "escore-mess@native-2026-10-03+8f07ae325426",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/2342140/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "MESS = lesão esquelética/partes moles (1 a 4) + isquemia (0 a 3, dobrada se durar mais de 6 h) + choque (0 a 2) + idade (0 a 2).",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "energia",
+            "label": "Lesão esquelética e de partes moles",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "1": "Baixa energia (facada, fratura simples, projétil de arma curta)",
+              "2": "Média energia (fratura exposta ou múltipla, luxação)",
+              "3": "Alta energia (acidente em alta velocidade, projétil de fuzil)",
+              "4": "Muito alta energia (o anterior + contaminação grosseira)"
+            }
+          },
+          {
+            "key": "isquemia",
+            "label": "Isquemia do membro",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "Sem isquemia",
+              "1": "Pulso reduzido ou ausente, perfusão normal",
+              "2": "Sem pulso, parestesias, enchimento capilar lento",
+              "3": "Membro frio, paralisado, insensível"
+            }
+          },
+          {
+            "key": "tempo",
+            "label": "Isquemia há mais de 6 horas?",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Não",
+              "1": "Sim"
+            }
+          },
+          {
+            "key": "choque",
+            "label": "Choque",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "PAS sempre &gt; 90 mmHg",
+              "1": "Hipotensão transitória",
+              "2": "Hipotensão persistente"
+            }
+          },
+          {
+            "key": "idade",
+            "label": "Idade",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "&lt; 30 anos",
+              "1": "30 a 50 anos",
+              "2": "&gt; 50 anos"
+            }
+          }
+        ],
+        "hash": "fed7d5ea132002a58b3981990d0090a69fb9ff72316fa689d6e1132b5754188b"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Johansen K et al. Objective criteria accurately predict amputation following lower extremity trauma. J Trauma, 1990.",
+          "url": "https://doi.org/10.1097/00005373-199005000-00007",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Objective criteria accurately predict amputation following lower extremity trauma.",
+            "year": "1990",
+            "firstPublicationDate": "1990-05-01",
+            "doi": "10.1097/00005373-199005000-00007",
+            "pmid": "2342140",
+            "journal": "The Journal of trauma",
+            "authors": "Johansen K, Daines M, Howey T, Helfet D, Hansen ST."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/2342140/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "7b2652666d7dbe879ec4618bb6711edbb42cb2d9ff675fad0c0f01f0f7c90a9a",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T19:21:17.222Z",
+        "total": 216,
+        "passed": 216,
+        "sourceRowCount": 216,
+        "uniqueApiInputCount": 216,
+        "sourceContextCount": 216,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "a8a4d574c9ff6feb44617353b6364bd3efe29f7c7c46c24725a6054fb0b3343d",
+          "total": 216,
+          "bankRowCount": 216,
+          "uniqueApiInputCount": 216,
+          "sourceContextCount": 216,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/villalta-mess-isth-independent-expectations-final27.json",
+              "sha256": "6d591e22f0fa891dc22b9833ad2f6ab2744cbdf1fe7025cfc872fa9c2e0ca42b"
+            },
+            {
+              "file": "reports/review-20261003/villalta-mess-isth-primary-observations-final27.cjs",
+              "sha256": "3c4045b2f9ab021d826973bd2820e437b67a1878b2b0f25ddc0993ea0a22a1d4"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/villalta-mess-isth-independent-source-check-final27.json",
+            "sha256": "b1de4431734f1a15edfa671bba7d0c0da5464a310c0983a2bf3e17cb6e2b453a"
+          },
+          "packagingRequirement": "Compose separately owned source/rubric/edition changes and fresh build/package/browser bindings before publication."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "sourceRows": 216,
+          "uniqueApiInputs": 216,
+          "duplicateRows": 0,
+          "expectationAudit": {
+            "file": "reports/review-20261003/villalta-mess-isth-independent-expectations-final27.json",
+            "sha256": "6d591e22f0fa891dc22b9833ad2f6ab2744cbdf1fe7025cfc872fa9c2e0ca42b"
+          }
+        },
+        "scope": "All216 combinations of source-table selected point codes and duration flag, exact integer total only.72 additional selected no-ischemia-zero combinations are identified separately as platform arithmetic extension, not original source-conforming examples. Raw elapsed time, blood pressure and age are not accepted by this form and are not classified here.",
+        "sources": [
+          {
+            "primaryObservations": {
+              "file": "reports/review-20261003/villalta-mess-isth-primary-observations-final27.cjs",
+              "sha256": "3c4045b2f9ab021d826973bd2820e437b67a1878b2b0f25ddc0993ea0a22a1d4"
+            },
+            "id": "escore-mess",
+            "sources": [
+              {
+                "doi": "10.1097/00005373-199005000-00007",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/2342140/",
+                "access": "Original1990 abstract indexed/read. Direct LWW fulltext request returned internal access error; no complete1990 table reading claimed.",
+                "readScope": "Abstract identifies four domains and small retrospective/prospective lower-limb injury cohorts; no universal amputational rule inferred."
+              },
+              {
+                "doi": "10.2147/VHRM.S15316",
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3004513/",
+                "access": "Direct official PMC full HTML of Topal etal.2010 retrospective primary cohort.",
+                "readScope": "Table1, its ischemia footnote, Patients&Methods and limited abstract. Numeric table reproduces MESS use; this is not the1990 derivation article."
+              }
+            ],
+            "pointContract": {
+              "energyCodes": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "ischemiaCodesConfirmedIn2010Table": [
+                1,
+                2,
+                3
+              ],
+              "durationSelectedCode": [
+                0,
+                1
+              ],
+              "durationThreshold": {
+                "value": 6,
+                "unit": "hours",
+                "doubleOnlyIfGreater": true
+              },
+              "shockCodes": [
+                0,
+                1,
+                2
+              ],
+              "ageCodes": [
+                0,
+                1,
+                2
+              ],
+              "sourceAgeBands": [
+                "<30",
+                "30–50",
+                ">50"
+              ],
+              "sourceShockZeroDescription": "Systolic pressure persistently greater than90mmHg",
+              "formula": "energy + ischemia*(durationGreaterThan6?2:1) + shock + age",
+              "localZeroIschemiaExtension": "The current form also offers no ischemia=0; this option is absent from the directly read2010 Table1. Its zero contribution is tested separately as a platform extension, not source table conformity."
+            },
+            "scope": "All216 combinations of source-table selected point codes and duration flag, exact integer total only.72 additional selected no-ischemia-zero combinations are identified separately as platform arithmetic extension, not original source-conforming examples. Raw elapsed time, blood pressure and age are not accepted by this form and are not classified here.",
+            "limitations": "Original1990 full text was not obtained. The directly read2010 cohort used140surgically treated vascular-injury patients and excluded primary amputation without vascular repair. Numeric point replay does not approve amputational prediction, limb viability, descriptors or clinical interventions. More-than-six-hours is strict; an exact-six-hours continuous clinical input is not part of the selected-flag API."
+          }
+        ],
+        "evidencePath": "reports/review-20261003/villalta-mess-isth-independent-source-check-final27.json",
+        "evidenceSha256": "b1de4431734f1a15edfa671bba7d0c0da5464a310c0983a2bf3e17cb6e2b453a",
+        "independentPeer": {
+          "status": "passed-scoped-numeric",
+          "evidence": {
+            "file": "reports/review-20261003/villalta-mess-isth-independent-peer-verify-final27.json",
+            "sha256": "ff8bc18b4b06912aac258ce96b6c33cacbe5a1d484b58e52cc9d6679ad462028"
+          },
+          "scope": "Independently read selected primary tables, own frozen source-point expectations and three adapters Node/isolatedChromium. Source scope partial; local MESS72 zero cases separated; no clinical/rights/full-method approval."
+        },
+        "freshAdapterExecutions": 648,
+        "freshVmExecutions": 648,
+        "actualBrowserEvidenceScope": "Original isolated actual Chromium, each of the three exactly bound adapters, source-only rows. Separate local MESS72 extension is not part of this source bank.",
+        "implementations": [
+          {
+            "id": "escore-mess",
+            "app": "website",
+            "file": "apps/website/private/tool-code/escore-mess/calculator.js",
+            "sha256": "8f07ae325426cfab2797d66164af04f982cb27e51a0ec14d9851a244825cf331"
+          },
+          {
+            "id": "escore-mess",
+            "app": "dashboard",
+            "file": "apps/dashboard/private/tool-code/escore-mess/calculator.js",
+            "sha256": "8f07ae325426cfab2797d66164af04f982cb27e51a0ec14d9851a244825cf331"
+          },
+          {
+            "id": "escore-mess",
+            "app": "command-center",
+            "file": "apps/command-center/private/tool-code/escore-mess/calculator.js",
+            "sha256": "8f07ae325426cfab2797d66164af04f982cb27e51a0ec14d9851a244825cf331"
+          }
+        ],
+        "qualifications": [
+          "Original1990 full text was not obtained. The directly read2010 cohort used140surgically treated vascular-injury patients and excluded primary amputation without vascular repair. Numeric point replay does not approve amputational prediction, limb viability, descriptors or clinical interventions. More-than-six-hours is strict; an exact-six-hours continuous clinical input is not part of the selected-flag API.",
+          "MESS source bank excludes all72 local zero-ischemia examples. Those remain in the untouched original platform-extension receipt and are not counted as source conformity.",
+          "Only raw.score selected-point arithmetic is included. Clinical categories, main text, private level/verdict/note/rows, prognosis, diagnosis, management and unmeasured feature classification are excluded.",
+          "All source scenarios in this bank and the original donor reports remain retained. Mirror/runtime calculations do not multiply scenario counts. Inline four examples are a subset of the complete downloadable bank.",
+          "Source fields, rubric/edition labels, clinical scope notes and localization changes have separate ownership and must be composed without replacing whole catalogs. All862 historic fixtures/tolerances and approval flags remain unchanged.",
+          "Fresh source/build/packages and browser journey bindings are required before publication. No already-served website or final package proof is claimed by this preparation."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "metadataPackagingPeer": {
+          "status": "passed",
+          "scope": "Bounded independent review of the original source bank and its metadata/helper. Prospective code rebinding is separately re-executed below and requires the final composition peer; no human approval inferred.",
+          "peer": {
+            "file": "reports/review-20261003/villalta-mess-isth-bank-metadata-independent-review-western-final27.json",
+            "sha256": "8254f049e2cde19930dae4e5ef3b689175daa3a083b9a8a056d3650abcf8f1c5"
+          },
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "prospectiveSource27Bindings": [
+          {
+            "file": "apps/website/private/tool-code/escore-mess/calculator.js",
+            "sha256": "8f07ae325426cfab2797d66164af04f982cb27e51a0ec14d9851a244825cf331"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/escore-mess/calculator.js",
+            "sha256": "8f07ae325426cfab2797d66164af04f982cb27e51a0ec14d9851a244825cf331"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/escore-mess/calculator.js",
+            "sha256": "8f07ae325426cfab2797d66164af04f982cb27e51a0ec14d9851a244825cf331"
+          }
+        ],
+        "prospectiveSource27Replay": {
+          "file": "reports/review-20261003/source27-complete-bank-current-replay-root-r3.json",
+          "sha256": "44c601f27d3d5051a8d55a581381112b58df36c7c4b6cfd24ce1249b263d6a2b"
+        },
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "8f07ae325426cfab2797d66164af04f982cb27e51a0ec14d9851a244825cf331"
+    },
+    "limits": "O MESS original foi derivado em pequenos grupos de trauma grave de membro inferior. A associação do corte ≥7 com amputação nesses grupos não estabelece uma regra universal nem uma indicação automática. Salvamento do membro depende de avaliação multidisciplinar e condições clínicas não resumidas no escore.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:03.083Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Resumo não traz todas as definições, duplicação de isquemia > 6 h ou validação em tratamento moderno. Não sustenta ordem automática de amputação."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/escore-mess/calculator.js",
+    "bytes": 5625,
+    "sha256": "8f07ae325426cfab2797d66164af04f982cb27e51a0ec14d9851a244825cf331"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "d8f7fc6d11d5cc8ee97c7a105356fdbb22c9c7c3431f7333cbcd83d1baf22e97",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "0a646fc91b97fb531f06152a8259d129648ca51ccd6be8c9bef99c43976bf44a",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "0a646fc91b97fb531f06152a8259d129648ca51ccd6be8c9bef99c43976bf44a",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

@@ -1,6 +1,16 @@
 [
   {
-    "label": "Fratura exposta, pulso reduzido, sem choque, 40 anos: 2 + 1 + 0 + 1 = 4",
+    "id": "escore-mess",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Fratura exposta, pulso reduzido, sem choque, 40 anos: 2 + 1 + 0 + 1 = 4",
+    "originalInput": {
+      "energia": "2",
+      "isquemia": "1",
+      "tempo": "0",
+      "choque": "0",
+      "idade": "1"
+    },
     "input": {
       "energia": "2",
       "isquemia": "1",
@@ -12,17 +22,37 @@
       "score": 4,
       "level": "low"
     },
-    "originalInput": {
-      "energia": "2",
-      "isquemia": "1",
-      "tempo": "0",
-      "choque": "0",
-      "idade": "1"
+    "recordedResult": {
+      "main": [
+        "4",
+        "pontos"
+      ],
+      "label": "MESS",
+      "raw": {
+        "score": 4
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Alta energia, sem pulso há 8 h (2 × 2), hipotensão transitória, 25 anos: 3 + 4 + 1 + 0 = 8",
+    "id": "escore-mess",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Alta energia, sem pulso há 8 h (2 × 2), hipotensão transitória, 25 anos: 3 + 4 + 1 + 0 = 8",
+    "originalInput": {
+      "energia": "3",
+      "isquemia": "2",
+      "tempo": "1",
+      "choque": "1",
+      "idade": "0"
+    },
     "input": {
       "energia": "3",
       "isquemia": "2",
@@ -34,17 +64,37 @@
       "score": 8,
       "level": "high"
     },
+    "recordedResult": {
+      "main": [
+        "8",
+        "pontos"
+      ],
+      "label": "MESS",
+      "raw": {
+        "score": 8
+      }
+    },
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "escore-mess",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Limite: alta energia, sem pulso &lt; 6 h, hipotensão transitória, 45 anos: 3 + 2 + 1 + 1 = 7",
     "originalInput": {
       "energia": "3",
       "isquemia": "2",
-      "tempo": "1",
+      "tempo": "0",
       "choque": "1",
-      "idade": "0"
+      "idade": "1"
     },
-    "expandedZeroOptions": []
-  },
-  {
-    "label": "Limite: alta energia, sem pulso &lt; 6 h, hipotensão transitória, 45 anos: 3 + 2 + 1 + 1 = 7",
     "input": {
       "energia": "3",
       "isquemia": "2",
@@ -56,13 +106,23 @@
       "score": 7,
       "level": "high"
     },
-    "originalInput": {
-      "energia": "3",
-      "isquemia": "2",
-      "tempo": "0",
-      "choque": "1",
-      "idade": "1"
+    "recordedResult": {
+      "main": [
+        "7",
+        "pontos"
+      ],
+      "label": "MESS",
+      "raw": {
+        "score": 7
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

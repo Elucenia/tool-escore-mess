@@ -1,0 +1,258 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field energia",
+    "input": {
+      "isquemia": "1",
+      "tempo": "0",
+      "choque": "0",
+      "idade": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "energia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field energia",
+    "input": {
+      "energia": "",
+      "isquemia": "1",
+      "tempo": "0",
+      "choque": "0",
+      "idade": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "energia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option energia",
+    "input": {
+      "energia": "__ELUCENIA_INVALID_OPTION__",
+      "isquemia": "1",
+      "tempo": "0",
+      "choque": "0",
+      "idade": "1"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "energia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field isquemia",
+    "input": {
+      "energia": "2",
+      "tempo": "0",
+      "choque": "0",
+      "idade": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "isquemia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field isquemia",
+    "input": {
+      "energia": "2",
+      "isquemia": "",
+      "tempo": "0",
+      "choque": "0",
+      "idade": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "isquemia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option isquemia",
+    "input": {
+      "energia": "2",
+      "isquemia": "__ELUCENIA_INVALID_OPTION__",
+      "tempo": "0",
+      "choque": "0",
+      "idade": "1"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "isquemia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field tempo",
+    "input": {
+      "energia": "2",
+      "isquemia": "1",
+      "choque": "0",
+      "idade": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tempo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field tempo",
+    "input": {
+      "energia": "2",
+      "isquemia": "1",
+      "tempo": "",
+      "choque": "0",
+      "idade": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tempo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option tempo",
+    "input": {
+      "energia": "2",
+      "isquemia": "1",
+      "tempo": "__ELUCENIA_INVALID_OPTION__",
+      "choque": "0",
+      "idade": "1"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "tempo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field choque",
+    "input": {
+      "energia": "2",
+      "isquemia": "1",
+      "tempo": "0",
+      "idade": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "choque"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field choque",
+    "input": {
+      "energia": "2",
+      "isquemia": "1",
+      "tempo": "0",
+      "choque": "",
+      "idade": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "choque"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option choque",
+    "input": {
+      "energia": "2",
+      "isquemia": "1",
+      "tempo": "0",
+      "choque": "__ELUCENIA_INVALID_OPTION__",
+      "idade": "1"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "choque"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field idade",
+    "input": {
+      "energia": "2",
+      "isquemia": "1",
+      "tempo": "0",
+      "choque": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field idade",
+    "input": {
+      "energia": "2",
+      "isquemia": "1",
+      "tempo": "0",
+      "choque": "0",
+      "idade": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option idade",
+    "input": {
+      "energia": "2",
+      "isquemia": "1",
+      "tempo": "0",
+      "choque": "0",
+      "idade": "__ELUCENIA_INVALID_OPTION__"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]
