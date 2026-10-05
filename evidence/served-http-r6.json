@@ -1,0 +1,638 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "escore-mess",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/escore-mess/calculator.js",
+    "sha256": "8f07ae325426cfab2797d66164af04f982cb27e51a0ec14d9851a244825cf331",
+    "bytes": 5625
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 3,
+    "replayed": 3,
+    "passed": 3,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "escore-mess",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "Fratura exposta, pulso reduzido, sem choque, 40 anos: 2 + 1 + 0 + 1 = 4",
+      "originalInput": {
+        "energia": "2",
+        "isquemia": "1",
+        "tempo": "0",
+        "choque": "0",
+        "idade": "1"
+      },
+      "input": {
+        "energia": "2",
+        "isquemia": "1",
+        "tempo": "0",
+        "choque": "0",
+        "idade": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "score": 4,
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "4",
+          "pontos"
+        ],
+        "label": "MESS",
+        "raw": {
+          "score": 4
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/escore-mess/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "energia": "2",
+            "isquemia": "1",
+            "tempo": "0",
+            "choque": "0",
+            "idade": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/escore-mess/calculate",
+          "startedAt": "2026-10-05T17:39:11.274Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "escore-mess",
+              "main": [
+                "4",
+                "pontos"
+              ],
+              "label": "MESS",
+              "raw": {
+                "score": 4
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "c4b4f6896a92b541a9d07b80108b6b81fafbb8d46b2d271aa34edb0b00fc1845",
+          "bytes": 123,
+          "elapsedMs": 8.663099999976112
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/escore-mess/calculate",
+        "startedAt": "2026-10-05T17:39:11.274Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "escore-mess",
+            "main": [
+              "4",
+              "pontos"
+            ],
+            "label": "MESS",
+            "raw": {
+              "score": 4
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "c4b4f6896a92b541a9d07b80108b6b81fafbb8d46b2d271aa34edb0b00fc1845",
+        "bytes": 123,
+        "elapsedMs": 8.663099999976112
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 4,
+            "obtained": 4,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 4,
+            "obtained": 4,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "4",
+            "obtained": "4",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pontos",
+            "obtained": "pontos",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "escore-mess",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "Alta energia, sem pulso há 8 h (2 × 2), hipotensão transitória, 25 anos: 3 + 4 + 1 + 0 = 8",
+      "originalInput": {
+        "energia": "3",
+        "isquemia": "2",
+        "tempo": "1",
+        "choque": "1",
+        "idade": "0"
+      },
+      "input": {
+        "energia": "3",
+        "isquemia": "2",
+        "tempo": "1",
+        "choque": "1",
+        "idade": "0"
+      },
+      "amendments": [],
+      "expected": {
+        "score": 8,
+        "level": "high"
+      },
+      "recordedResult": {
+        "main": [
+          "8",
+          "pontos"
+        ],
+        "label": "MESS",
+        "raw": {
+          "score": 8
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/escore-mess/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "energia": "3",
+            "isquemia": "2",
+            "tempo": "1",
+            "choque": "1",
+            "idade": "0"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/escore-mess/calculate",
+          "startedAt": "2026-10-05T17:39:11.586Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "escore-mess",
+              "main": [
+                "8",
+                "pontos"
+              ],
+              "label": "MESS",
+              "raw": {
+                "score": 8
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "ac169f87af6705dcecc9140222d054be607035eba756bb649d00ac8e5b252956",
+          "bytes": 123,
+          "elapsedMs": 5.385500000003958
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/escore-mess/calculate",
+        "startedAt": "2026-10-05T17:39:11.586Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "escore-mess",
+            "main": [
+              "8",
+              "pontos"
+            ],
+            "label": "MESS",
+            "raw": {
+              "score": 8
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "ac169f87af6705dcecc9140222d054be607035eba756bb649d00ac8e5b252956",
+        "bytes": 123,
+        "elapsedMs": 5.385500000003958
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 8,
+            "obtained": 8,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 8,
+            "obtained": 8,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "8",
+            "obtained": "8",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pontos",
+            "obtained": "pontos",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "escore-mess",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "Limite: alta energia, sem pulso &lt; 6 h, hipotensão transitória, 45 anos: 3 + 2 + 1 + 1 = 7",
+      "originalInput": {
+        "energia": "3",
+        "isquemia": "2",
+        "tempo": "0",
+        "choque": "1",
+        "idade": "1"
+      },
+      "input": {
+        "energia": "3",
+        "isquemia": "2",
+        "tempo": "0",
+        "choque": "1",
+        "idade": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "score": 7,
+        "level": "high"
+      },
+      "recordedResult": {
+        "main": [
+          "7",
+          "pontos"
+        ],
+        "label": "MESS",
+        "raw": {
+          "score": 7
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/escore-mess/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "energia": "3",
+            "isquemia": "2",
+            "tempo": "0",
+            "choque": "1",
+            "idade": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/escore-mess/calculate",
+          "startedAt": "2026-10-05T17:39:11.898Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "escore-mess",
+              "main": [
+                "7",
+                "pontos"
+              ],
+              "label": "MESS",
+              "raw": {
+                "score": 7
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "d9bc1d82bbeb05351294b6c8cd4fda11c9ce9627d4068672ddd9fadc1d38da32",
+          "bytes": 123,
+          "elapsedMs": 4.1806999999971595
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/escore-mess/calculate",
+        "startedAt": "2026-10-05T17:39:11.898Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "escore-mess",
+            "main": [
+              "7",
+              "pontos"
+            ],
+            "label": "MESS",
+            "raw": {
+              "score": 7
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "d9bc1d82bbeb05351294b6c8cd4fda11c9ce9627d4068672ddd9fadc1d38da32",
+        "bytes": 123,
+        "elapsedMs": 4.1806999999971595
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 7,
+            "obtained": 7,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 7,
+            "obtained": 7,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "7",
+            "obtained": "7",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pontos",
+            "obtained": "pontos",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
