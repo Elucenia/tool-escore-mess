@@ -322,7 +322,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "MESS/Johansen 1990:4 domínios, isquemia dobrada>6 h; sem ordem automática amputação",
-    "implementationVersion": "escore-mess@native-2026-10-03+8f07ae325426",
+    "implementationVersion": "escore-mess@native-2026-10-05+7ccb0212004a",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/2342140/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -606,7 +606,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "8f07ae325426cfab2797d66164af04f982cb27e51a0ec14d9851a244825cf331"
+      "implementationHash": "7ccb0212004a816139a41148130c590eb55f0e2f9fe57ebd3f871d1249de983a",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "escore-mess@native-2026-10-03+8f07ae325426",
+          "previousImplementationHash": "8f07ae325426cfab2797d66164af04f982cb27e51a0ec14d9851a244825cf331",
+          "implementationHash": "7ccb0212004a816139a41148130c590eb55f0e2f9fe57ebd3f871d1249de983a",
+          "scientificBodySha256": "4fbcf765c5a4c666f983712471fc2e117efe9a8bbaedb23e49f1de20441a3cbf",
+          "metadataContractHash": "fed7d5ea132002a58b3981990d0090a69fb9ff72316fa689d6e1132b5754188b",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "O MESS original foi derivado em pequenos grupos de trauma grave de membro inferior. A associação do corte ≥7 com amputação nesses grupos não estabelece uma regra universal nem uma indicação automática. Salvamento do membro depende de avaliação multidisciplinar e condições clínicas não resumidas no escore.",
     "sourceLimitEvidence": {
@@ -625,20 +653,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/escore-mess/calculator.js",
-    "bytes": 5625,
-    "sha256": "8f07ae325426cfab2797d66164af04f982cb27e51a0ec14d9851a244825cf331"
+    "bytes": 5830,
+    "sha256": "7ccb0212004a816139a41148130c590eb55f0e2f9fe57ebd3f871d1249de983a"
   },
-  "sourceToolSha256": "d8f7fc6d11d5cc8ee97c7a105356fdbb22c9c7c3431f7333cbcd83d1baf22e97",
+  "sourceToolSha256": "e51551a3e62af2d05c4100931eb031a51261d26a6df61032a6924e477581b3fc",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "0a646fc91b97fb531f06152a8259d129648ca51ccd6be8c9bef99c43976bf44a",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "0a646fc91b97fb531f06152a8259d129648ca51ccd6be8c9bef99c43976bf44a",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

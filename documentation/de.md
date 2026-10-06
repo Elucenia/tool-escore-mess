@@ -92,3 +92,40 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+MESS < 7: Bereich der Extremitätenerhaltung in der Originalserie
+
+| Ergebnisdetails | |
+| --- | --- |
+| Ischämiepunkte | 1 |
+
+Der MESS entscheidet nicht allein: Die Indikation zur primären Amputation liegt beim Team (Orthopädie, Gefäßchirurgie und plastische Chirurgie), bei stabilisiertem Patienten.
+
+
+### 2
+
+MESS ≥ 7: In der Originalserie wurden alle Extremitäten mit diesem Score amputiert
+
+| Ergebnisdetails | |
+| --- | --- |
+| Ischämiepunkte | 4 (verdoppelt: Ischämie > 6 h) |
+
+Der MESS entscheidet nicht allein: Die Indikation zur primären Amputation liegt beim Team (Orthopädie, Gefäßchirurgie und plastische Chirurgie), bei stabilisiertem Patienten.
+
+
+### 3
+
+MESS ≥ 7: In der Originalserie wurden alle Extremitäten mit diesem Score amputiert
+
+| Ergebnisdetails | |
+| --- | --- |
+| Ischämiepunkte | 2 |
+
+Der MESS entscheidet nicht allein: Die Indikation zur primären Amputation liegt beim Team (Orthopädie, Gefäßchirurgie und plastische Chirurgie), bei stabilisiertem Patienten.
+

@@ -92,3 +92,40 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+MESS < 7: limb salvage range in the original series
+
+| Result details | |
+| --- | --- |
+| Ischemia points | 1 |
+
+MESS does not decide on its own: the indication for primary amputation is made by the team (orthopedics, vascular surgery, and plastic surgery), with the patient stabilized.
+
+
+### 2
+
+MESS ≥ 7: in the original series, all limbs with this score were amputated
+
+| Result details | |
+| --- | --- |
+| Ischemia points | 4 (doubled: ischemia > 6 h) |
+
+MESS does not decide on its own: the indication for primary amputation is made by the team (orthopedics, vascular surgery, and plastic surgery), with the patient stabilized.
+
+
+### 3
+
+MESS ≥ 7: in the original series, all limbs with this score were amputated
+
+| Result details | |
+| --- | --- |
+| Ischemia points | 2 |
+
+MESS does not decide on its own: the indication for primary amputation is made by the team (orthopedics, vascular surgery, and plastic surgery), with the patient stabilized.
+

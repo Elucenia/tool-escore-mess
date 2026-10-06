@@ -1,0 +1,1038 @@
+{
+  "id": "escore-mess",
+  "implementationVersion": "escore-mess@native-2026-10-05+7ccb0212004a",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Fratura exposta, pulso reduzido, sem choque, 40 anos: 2 + 1 + 0 + 1 = 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Pontos de isquemia",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MESS < 7: faixa dos membros salvos na série original",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "O MESS não decide sozinho: a indicação de amputação primária é da equipe (ortopedia, vascular e plástica), com o paciente estabilizado.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Alta energia, sem pulso há 8 h (2 × 2), hipotensão transitória, 25 anos: 3 + 4 + 1 + 0 = 8",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Pontos de isquemia",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "4 (dobrados: isquemia > 6 h)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MESS ≥ 7: na série original, todos os membros com esse escore foram amputados",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "O MESS não decide sozinho: a indicação de amputação primária é da equipe (ortopedia, vascular e plástica), com o paciente estabilizado.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: alta energia, sem pulso &lt; 6 h, hipotensão transitória, 45 anos: 3 + 2 + 1 + 1 = 7",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Pontos de isquemia",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "2",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MESS ≥ 7: na série original, todos os membros com esse escore foram amputados",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "O MESS não decide sozinho: a indicação de amputação primária é da equipe (ortopedia, vascular e plástica), com o paciente estabilizado.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Fratura exposta, pulso reduzido, sem choque, 40 anos: 2 + 1 + 0 + 1 = 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Ischemia points",
+                "locale": "en",
+                "template": "documented-authored-d833864d594995be9581"
+              },
+              "value": {
+                "text": "1",
+                "locale": "en",
+                "template": "documented-authored-415d360bd01781dfd099",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MESS < 7: limb salvage range in the original series",
+            "locale": "en",
+            "template": "documented-authored-53024de922b6ef42f124"
+          },
+          "note": {
+            "text": "MESS does not decide on its own: the indication for primary amputation is made by the team (orthopedics, vascular surgery, and plastic surgery), with the patient stabilized.",
+            "locale": "en",
+            "template": "documented-authored-4799f69625c832eb3be9"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Alta energia, sem pulso há 8 h (2 × 2), hipotensão transitória, 25 anos: 3 + 4 + 1 + 0 = 8",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Ischemia points",
+                "locale": "en",
+                "template": "documented-authored-d833864d594995be9581"
+              },
+              "value": {
+                "text": "4 (doubled: ischemia > 6 h)",
+                "locale": "en",
+                "template": "documented-authored-639213c5787c4ff13ba8",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MESS ≥ 7: in the original series, all limbs with this score were amputated",
+            "locale": "en",
+            "template": "documented-authored-0e381bb6222b32bbb691"
+          },
+          "note": {
+            "text": "MESS does not decide on its own: the indication for primary amputation is made by the team (orthopedics, vascular surgery, and plastic surgery), with the patient stabilized.",
+            "locale": "en",
+            "template": "documented-authored-4799f69625c832eb3be9"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: alta energia, sem pulso &lt; 6 h, hipotensão transitória, 45 anos: 3 + 2 + 1 + 1 = 7",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Ischemia points",
+                "locale": "en",
+                "template": "documented-authored-d833864d594995be9581"
+              },
+              "value": {
+                "text": "2",
+                "locale": "en",
+                "template": "documented-authored-415d360bd01781dfd099",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MESS ≥ 7: in the original series, all limbs with this score were amputated",
+            "locale": "en",
+            "template": "documented-authored-0e381bb6222b32bbb691"
+          },
+          "note": {
+            "text": "MESS does not decide on its own: the indication for primary amputation is made by the team (orthopedics, vascular surgery, and plastic surgery), with the patient stabilized.",
+            "locale": "en",
+            "template": "documented-authored-4799f69625c832eb3be9"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Fratura exposta, pulso reduzido, sem choque, 40 anos: 2 + 1 + 0 + 1 = 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Puntos de isquemia",
+                "locale": "es",
+                "template": "documented-authored-d833864d594995be9581"
+              },
+              "value": {
+                "text": "1",
+                "locale": "es",
+                "template": "documented-authored-415d360bd01781dfd099",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MESS < 7: rango de salvamento de extremidades en la serie original",
+            "locale": "es",
+            "template": "documented-authored-53024de922b6ef42f124"
+          },
+          "note": {
+            "text": "El MESS no decide por sí solo: la indicación de amputación primaria corresponde al equipo (ortopedia, cirugía vascular y plástica), con el paciente estabilizado.",
+            "locale": "es",
+            "template": "documented-authored-4799f69625c832eb3be9"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Alta energia, sem pulso há 8 h (2 × 2), hipotensão transitória, 25 anos: 3 + 4 + 1 + 0 = 8",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Puntos de isquemia",
+                "locale": "es",
+                "template": "documented-authored-d833864d594995be9581"
+              },
+              "value": {
+                "text": "4 (doblados: isquemia > 6 h)",
+                "locale": "es",
+                "template": "documented-authored-639213c5787c4ff13ba8",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MESS ≥ 7: en la serie original, todas las extremidades con esta puntuación fueron amputadas",
+            "locale": "es",
+            "template": "documented-authored-0e381bb6222b32bbb691"
+          },
+          "note": {
+            "text": "El MESS no decide por sí solo: la indicación de amputación primaria corresponde al equipo (ortopedia, cirugía vascular y plástica), con el paciente estabilizado.",
+            "locale": "es",
+            "template": "documented-authored-4799f69625c832eb3be9"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: alta energia, sem pulso &lt; 6 h, hipotensão transitória, 45 anos: 3 + 2 + 1 + 1 = 7",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Puntos de isquemia",
+                "locale": "es",
+                "template": "documented-authored-d833864d594995be9581"
+              },
+              "value": {
+                "text": "2",
+                "locale": "es",
+                "template": "documented-authored-415d360bd01781dfd099",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MESS ≥ 7: en la serie original, todas las extremidades con esta puntuación fueron amputadas",
+            "locale": "es",
+            "template": "documented-authored-0e381bb6222b32bbb691"
+          },
+          "note": {
+            "text": "El MESS no decide por sí solo: la indicación de amputación primaria corresponde al equipo (ortopedia, cirugía vascular y plástica), con el paciente estabilizado.",
+            "locale": "es",
+            "template": "documented-authored-4799f69625c832eb3be9"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Fratura exposta, pulso reduzido, sem choque, 40 anos: 2 + 1 + 0 + 1 = 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Points d’ischémie",
+                "locale": "fr",
+                "template": "documented-authored-d833864d594995be9581"
+              },
+              "value": {
+                "text": "1",
+                "locale": "fr",
+                "template": "documented-authored-415d360bd01781dfd099",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MESS < 7 : plage de sauvetage du membre dans la série originale",
+            "locale": "fr",
+            "template": "documented-authored-53024de922b6ef42f124"
+          },
+          "note": {
+            "text": "Le MESS ne décide pas à lui seul : l’indication d’amputation primaire relève de l’équipe (orthopédie, chirurgie vasculaire et plastique), le patient étant stabilisé.",
+            "locale": "fr",
+            "template": "documented-authored-4799f69625c832eb3be9"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Alta energia, sem pulso há 8 h (2 × 2), hipotensão transitória, 25 anos: 3 + 4 + 1 + 0 = 8",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Points d’ischémie",
+                "locale": "fr",
+                "template": "documented-authored-d833864d594995be9581"
+              },
+              "value": {
+                "text": "4 (doublés : ischémie > 6 h)",
+                "locale": "fr",
+                "template": "documented-authored-639213c5787c4ff13ba8",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MESS ≥ 7 : dans la série originale, tous les membres ayant ce score ont été amputés",
+            "locale": "fr",
+            "template": "documented-authored-0e381bb6222b32bbb691"
+          },
+          "note": {
+            "text": "Le MESS ne décide pas à lui seul : l’indication d’amputation primaire relève de l’équipe (orthopédie, chirurgie vasculaire et plastique), le patient étant stabilisé.",
+            "locale": "fr",
+            "template": "documented-authored-4799f69625c832eb3be9"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: alta energia, sem pulso &lt; 6 h, hipotensão transitória, 45 anos: 3 + 2 + 1 + 1 = 7",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Points d’ischémie",
+                "locale": "fr",
+                "template": "documented-authored-d833864d594995be9581"
+              },
+              "value": {
+                "text": "2",
+                "locale": "fr",
+                "template": "documented-authored-415d360bd01781dfd099",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MESS ≥ 7 : dans la série originale, tous les membres ayant ce score ont été amputés",
+            "locale": "fr",
+            "template": "documented-authored-0e381bb6222b32bbb691"
+          },
+          "note": {
+            "text": "Le MESS ne décide pas à lui seul : l’indication d’amputation primaire relève de l’équipe (orthopédie, chirurgie vasculaire et plastique), le patient étant stabilisé.",
+            "locale": "fr",
+            "template": "documented-authored-4799f69625c832eb3be9"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Fratura exposta, pulso reduzido, sem choque, 40 anos: 2 + 1 + 0 + 1 = 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Ischämiepunkte",
+                "locale": "de",
+                "template": "documented-authored-d833864d594995be9581"
+              },
+              "value": {
+                "text": "1",
+                "locale": "de",
+                "template": "documented-authored-415d360bd01781dfd099",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MESS < 7: Bereich der Extremitätenerhaltung in der Originalserie",
+            "locale": "de",
+            "template": "documented-authored-53024de922b6ef42f124"
+          },
+          "note": {
+            "text": "Der MESS entscheidet nicht allein: Die Indikation zur primären Amputation liegt beim Team (Orthopädie, Gefäßchirurgie und plastische Chirurgie), bei stabilisiertem Patienten.",
+            "locale": "de",
+            "template": "documented-authored-4799f69625c832eb3be9"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Alta energia, sem pulso há 8 h (2 × 2), hipotensão transitória, 25 anos: 3 + 4 + 1 + 0 = 8",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Ischämiepunkte",
+                "locale": "de",
+                "template": "documented-authored-d833864d594995be9581"
+              },
+              "value": {
+                "text": "4 (verdoppelt: Ischämie > 6 h)",
+                "locale": "de",
+                "template": "documented-authored-639213c5787c4ff13ba8",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MESS ≥ 7: In der Originalserie wurden alle Extremitäten mit diesem Score amputiert",
+            "locale": "de",
+            "template": "documented-authored-0e381bb6222b32bbb691"
+          },
+          "note": {
+            "text": "Der MESS entscheidet nicht allein: Die Indikation zur primären Amputation liegt beim Team (Orthopädie, Gefäßchirurgie und plastische Chirurgie), bei stabilisiertem Patienten.",
+            "locale": "de",
+            "template": "documented-authored-4799f69625c832eb3be9"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: alta energia, sem pulso &lt; 6 h, hipotensão transitória, 45 anos: 3 + 2 + 1 + 1 = 7",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Ischämiepunkte",
+                "locale": "de",
+                "template": "documented-authored-d833864d594995be9581"
+              },
+              "value": {
+                "text": "2",
+                "locale": "de",
+                "template": "documented-authored-415d360bd01781dfd099",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MESS ≥ 7: In der Originalserie wurden alle Extremitäten mit diesem Score amputiert",
+            "locale": "de",
+            "template": "documented-authored-0e381bb6222b32bbb691"
+          },
+          "note": {
+            "text": "Der MESS entscheidet nicht allein: Die Indikation zur primären Amputation liegt beim Team (Orthopädie, Gefäßchirurgie und plastische Chirurgie), bei stabilisiertem Patienten.",
+            "locale": "de",
+            "template": "documented-authored-4799f69625c832eb3be9"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Fratura exposta, pulso reduzido, sem choque, 40 anos: 2 + 1 + 0 + 1 = 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Punti di ischemia",
+                "locale": "it",
+                "template": "documented-authored-d833864d594995be9581"
+              },
+              "value": {
+                "text": "1",
+                "locale": "it",
+                "template": "documented-authored-415d360bd01781dfd099",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MESS < 7: intervallo di salvataggio dell’arto nella serie originale",
+            "locale": "it",
+            "template": "documented-authored-53024de922b6ef42f124"
+          },
+          "note": {
+            "text": "Il MESS non decide da solo: l’indicazione all’amputazione primaria spetta al team (ortopedia, vascolare e plastica), con il paziente stabilizzato.",
+            "locale": "it",
+            "template": "documented-authored-4799f69625c832eb3be9"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Alta energia, sem pulso há 8 h (2 × 2), hipotensão transitória, 25 anos: 3 + 4 + 1 + 0 = 8",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Punti di ischemia",
+                "locale": "it",
+                "template": "documented-authored-d833864d594995be9581"
+              },
+              "value": {
+                "text": "4 (raddoppiati: ischemia > 6 h)",
+                "locale": "it",
+                "template": "documented-authored-639213c5787c4ff13ba8",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MESS ≥ 7: nella serie originale, tutti gli arti con questo punteggio sono stati amputati",
+            "locale": "it",
+            "template": "documented-authored-0e381bb6222b32bbb691"
+          },
+          "note": {
+            "text": "Il MESS non decide da solo: l’indicazione all’amputazione primaria spetta al team (ortopedia, vascolare e plastica), con il paziente stabilizzato.",
+            "locale": "it",
+            "template": "documented-authored-4799f69625c832eb3be9"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: alta energia, sem pulso &lt; 6 h, hipotensão transitória, 45 anos: 3 + 2 + 1 + 1 = 7",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Punti di ischemia",
+                "locale": "it",
+                "template": "documented-authored-d833864d594995be9581"
+              },
+              "value": {
+                "text": "2",
+                "locale": "it",
+                "template": "documented-authored-415d360bd01781dfd099",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MESS ≥ 7: nella serie originale, tutti gli arti con questo punteggio sono stati amputati",
+            "locale": "it",
+            "template": "documented-authored-0e381bb6222b32bbb691"
+          },
+          "note": {
+            "text": "Il MESS non decide da solo: l’indicazione all’amputazione primaria spetta al team (ortopedia, vascolare e plastica), con il paziente stabilizzato.",
+            "locale": "it",
+            "template": "documented-authored-4799f69625c832eb3be9"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Fratura exposta, pulso reduzido, sem choque, 40 anos: 2 + 1 + 0 + 1 = 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "نقاط الإقفار",
+                "locale": "ar",
+                "template": "documented-authored-d833864d594995be9581"
+              },
+              "value": {
+                "text": "١",
+                "locale": "ar",
+                "template": "documented-authored-415d360bd01781dfd099",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MESS < 7: نطاق إنقاذ الطرف في السلسلة الأصلية",
+            "locale": "ar",
+            "template": "documented-authored-53024de922b6ef42f124"
+          },
+          "note": {
+            "text": "لا يقرر MESS بمفرده: فقرار البتر الأوّلي يعود إلى الفريق (جراحة العظام، وجراحة الأوعية، والجراحة التجميلية)، بعد استقرار المريض.",
+            "locale": "ar",
+            "template": "documented-authored-4799f69625c832eb3be9"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Alta energia, sem pulso há 8 h (2 × 2), hipotensão transitória, 25 anos: 3 + 4 + 1 + 0 = 8",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "نقاط الإقفار",
+                "locale": "ar",
+                "template": "documented-authored-d833864d594995be9581"
+              },
+              "value": {
+                "text": "٤ (مضاعف: إقفار > 6 h)",
+                "locale": "ar",
+                "template": "documented-authored-639213c5787c4ff13ba8",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MESS ≥ 7: في السلسلة الأصلية، بُتِرَت جميع الأطراف ذات هذه الدرجة",
+            "locale": "ar",
+            "template": "documented-authored-0e381bb6222b32bbb691"
+          },
+          "note": {
+            "text": "لا يقرر MESS بمفرده: فقرار البتر الأوّلي يعود إلى الفريق (جراحة العظام، وجراحة الأوعية، والجراحة التجميلية)، بعد استقرار المريض.",
+            "locale": "ar",
+            "template": "documented-authored-4799f69625c832eb3be9"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: alta energia, sem pulso &lt; 6 h, hipotensão transitória, 45 anos: 3 + 2 + 1 + 1 = 7",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "نقاط الإقفار",
+                "locale": "ar",
+                "template": "documented-authored-d833864d594995be9581"
+              },
+              "value": {
+                "text": "٢",
+                "locale": "ar",
+                "template": "documented-authored-415d360bd01781dfd099",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MESS ≥ 7: في السلسلة الأصلية، بُتِرَت جميع الأطراف ذات هذه الدرجة",
+            "locale": "ar",
+            "template": "documented-authored-0e381bb6222b32bbb691"
+          },
+          "note": {
+            "text": "لا يقرر MESS بمفرده: فقرار البتر الأوّلي يعود إلى الفريق (جراحة العظام، وجراحة الأوعية، والجراحة التجميلية)، بعد استقرار المريض.",
+            "locale": "ar",
+            "template": "documented-authored-4799f69625c832eb3be9"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Fratura exposta, pulso reduzido, sem choque, 40 anos: 2 + 1 + 0 + 1 = 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "缺血点数",
+                "locale": "zh",
+                "template": "documented-authored-d833864d594995be9581"
+              },
+              "value": {
+                "text": "1",
+                "locale": "zh",
+                "template": "documented-authored-415d360bd01781dfd099",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MESS < 7：原始系列中的保肢范围",
+            "locale": "zh",
+            "template": "documented-authored-53024de922b6ef42f124"
+          },
+          "note": {
+            "text": "MESS 不会单独作出决定：初次截肢的指征由团队（骨科、血管外科和整形外科）在患者稳定后共同决定。",
+            "locale": "zh",
+            "template": "documented-authored-4799f69625c832eb3be9"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Alta energia, sem pulso há 8 h (2 × 2), hipotensão transitória, 25 anos: 3 + 4 + 1 + 0 = 8",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "缺血点数",
+                "locale": "zh",
+                "template": "documented-authored-d833864d594995be9581"
+              },
+              "value": {
+                "text": "4（加倍：缺血 > 6 h）",
+                "locale": "zh",
+                "template": "documented-authored-639213c5787c4ff13ba8",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MESS ≥ 7：在原始系列中，所有达到该评分的肢体均被截肢",
+            "locale": "zh",
+            "template": "documented-authored-0e381bb6222b32bbb691"
+          },
+          "note": {
+            "text": "MESS 不会单独作出决定：初次截肢的指征由团队（骨科、血管外科和整形外科）在患者稳定后共同决定。",
+            "locale": "zh",
+            "template": "documented-authored-4799f69625c832eb3be9"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: alta energia, sem pulso &lt; 6 h, hipotensão transitória, 45 anos: 3 + 2 + 1 + 1 = 7",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "缺血点数",
+                "locale": "zh",
+                "template": "documented-authored-d833864d594995be9581"
+              },
+              "value": {
+                "text": "2",
+                "locale": "zh",
+                "template": "documented-authored-415d360bd01781dfd099",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MESS ≥ 7：在原始系列中，所有达到该评分的肢体均被截肢",
+            "locale": "zh",
+            "template": "documented-authored-0e381bb6222b32bbb691"
+          },
+          "note": {
+            "text": "MESS 不会单独作出决定：初次截肢的指征由团队（骨科、血管外科和整形外科）在患者稳定后共同决定。",
+            "locale": "zh",
+            "template": "documented-authored-4799f69625c832eb3be9"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Fratura exposta, pulso reduzido, sem choque, 40 anos: 2 + 1 + 0 + 1 = 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "虚血ポイント",
+                "locale": "ja",
+                "template": "documented-authored-d833864d594995be9581"
+              },
+              "value": {
+                "text": "1",
+                "locale": "ja",
+                "template": "documented-authored-415d360bd01781dfd099",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MESS < 7：原著シリーズにおける肢温存の範囲",
+            "locale": "ja",
+            "template": "documented-authored-53024de922b6ef42f124"
+          },
+          "note": {
+            "text": "MESS だけで判断するものではない：一次切断の適応は、患者を安定化させたうえでチーム（整形外科、血管外科、形成外科）が決定する。",
+            "locale": "ja",
+            "template": "documented-authored-4799f69625c832eb3be9"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Alta energia, sem pulso há 8 h (2 × 2), hipotensão transitória, 25 anos: 3 + 4 + 1 + 0 = 8",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "虚血ポイント",
+                "locale": "ja",
+                "template": "documented-authored-d833864d594995be9581"
+              },
+              "value": {
+                "text": "4（2倍：虚血 > 6 h）",
+                "locale": "ja",
+                "template": "documented-authored-639213c5787c4ff13ba8",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MESS ≥ 7：原著シリーズでは、このスコアの四肢はすべて切断された",
+            "locale": "ja",
+            "template": "documented-authored-0e381bb6222b32bbb691"
+          },
+          "note": {
+            "text": "MESS だけで判断するものではない：一次切断の適応は、患者を安定化させたうえでチーム（整形外科、血管外科、形成外科）が決定する。",
+            "locale": "ja",
+            "template": "documented-authored-4799f69625c832eb3be9"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: alta energia, sem pulso &lt; 6 h, hipotensão transitória, 45 anos: 3 + 2 + 1 + 1 = 7",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "虚血ポイント",
+                "locale": "ja",
+                "template": "documented-authored-d833864d594995be9581"
+              },
+              "value": {
+                "text": "2",
+                "locale": "ja",
+                "template": "documented-authored-415d360bd01781dfd099",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MESS ≥ 7：原著シリーズでは、このスコアの四肢はすべて切断された",
+            "locale": "ja",
+            "template": "documented-authored-0e381bb6222b32bbb691"
+          },
+          "note": {
+            "text": "MESS だけで判断するものではない：一次切断の適応は、患者を安定化させたうえでチーム（整形外科、血管外科、形成外科）が決定する。",
+            "locale": "ja",
+            "template": "documented-authored-4799f69625c832eb3be9"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Fratura exposta, pulso reduzido, sem choque, 40 anos: 2 + 1 + 0 + 1 = 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "इस्कीमिया अंक",
+                "locale": "hi",
+                "template": "documented-authored-d833864d594995be9581"
+              },
+              "value": {
+                "text": "1",
+                "locale": "hi",
+                "template": "documented-authored-415d360bd01781dfd099",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MESS < 7: मूल श्रृंखला में अंग-रक्षण की सीमा",
+            "locale": "hi",
+            "template": "documented-authored-53024de922b6ef42f124"
+          },
+          "note": {
+            "text": "MESS अकेले निर्णय नहीं करता: प्राथमिक विच्छेदन का संकेत टीम (ऑर्थोपेडिक्स, वैस्कुलर और प्लास्टिक सर्जरी) द्वारा, रोगी के स्थिर होने के बाद, दिया जाता है.",
+            "locale": "hi",
+            "template": "documented-authored-4799f69625c832eb3be9"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Alta energia, sem pulso há 8 h (2 × 2), hipotensão transitória, 25 anos: 3 + 4 + 1 + 0 = 8",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "इस्कीमिया अंक",
+                "locale": "hi",
+                "template": "documented-authored-d833864d594995be9581"
+              },
+              "value": {
+                "text": "4 (दोगुना: इस्कीमिया > 6 h)",
+                "locale": "hi",
+                "template": "documented-authored-639213c5787c4ff13ba8",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MESS ≥ 7: मूल श्रृंखला में, इस स्कोर वाले सभी अंगों का विच्छेदन किया गया",
+            "locale": "hi",
+            "template": "documented-authored-0e381bb6222b32bbb691"
+          },
+          "note": {
+            "text": "MESS अकेले निर्णय नहीं करता: प्राथमिक विच्छेदन का संकेत टीम (ऑर्थोपेडिक्स, वैस्कुलर और प्लास्टिक सर्जरी) द्वारा, रोगी के स्थिर होने के बाद, दिया जाता है.",
+            "locale": "hi",
+            "template": "documented-authored-4799f69625c832eb3be9"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Limite: alta energia, sem pulso &lt; 6 h, hipotensão transitória, 45 anos: 3 + 2 + 1 + 1 = 7",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "इस्कीमिया अंक",
+                "locale": "hi",
+                "template": "documented-authored-d833864d594995be9581"
+              },
+              "value": {
+                "text": "2",
+                "locale": "hi",
+                "template": "documented-authored-415d360bd01781dfd099",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "MESS ≥ 7: मूल श्रृंखला में, इस स्कोर वाले सभी अंगों का विच्छेदन किया गया",
+            "locale": "hi",
+            "template": "documented-authored-0e381bb6222b32bbb691"
+          },
+          "note": {
+            "text": "MESS अकेले निर्णय नहीं करता: प्राथमिक विच्छेदन का संकेत टीम (ऑर्थोपेडिक्स, वैस्कुलर और प्लास्टिक सर्जरी) द्वारा, रोगी के स्थिर होने के बाद, दिया जाता है.",
+            "locale": "hi",
+            "template": "documented-authored-4799f69625c832eb3be9"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

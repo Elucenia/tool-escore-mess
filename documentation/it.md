@@ -92,3 +92,40 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+MESS < 7: intervallo di salvataggio dell’arto nella serie originale
+
+| Dettagli del risultato | |
+| --- | --- |
+| Punti di ischemia | 1 |
+
+Il MESS non decide da solo: l’indicazione all’amputazione primaria spetta al team (ortopedia, vascolare e plastica), con il paziente stabilizzato.
+
+
+### 2
+
+MESS ≥ 7: nella serie originale, tutti gli arti con questo punteggio sono stati amputati
+
+| Dettagli del risultato | |
+| --- | --- |
+| Punti di ischemia | 4 (raddoppiati: ischemia > 6 h) |
+
+Il MESS non decide da solo: l’indicazione all’amputazione primaria spetta al team (ortopedia, vascolare e plastica), con il paziente stabilizzato.
+
+
+### 3
+
+MESS ≥ 7: nella serie originale, tutti gli arti con questo punteggio sono stati amputati
+
+| Dettagli del risultato | |
+| --- | --- |
+| Punti di ischemia | 2 |
+
+Il MESS non decide da solo: l’indicazione all’amputazione primaria spetta al team (ortopedia, vascolare e plastica), con il paziente stabilizzato.
+

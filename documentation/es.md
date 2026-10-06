@@ -92,3 +92,40 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+MESS < 7: rango de salvamento de extremidades en la serie original
+
+| Detalles del resultado | |
+| --- | --- |
+| Puntos de isquemia | 1 |
+
+El MESS no decide por sí solo: la indicación de amputación primaria corresponde al equipo (ortopedia, cirugía vascular y plástica), con el paciente estabilizado.
+
+
+### 2
+
+MESS ≥ 7: en la serie original, todas las extremidades con esta puntuación fueron amputadas
+
+| Detalles del resultado | |
+| --- | --- |
+| Puntos de isquemia | 4 (doblados: isquemia > 6 h) |
+
+El MESS no decide por sí solo: la indicación de amputación primaria corresponde al equipo (ortopedia, cirugía vascular y plástica), con el paciente estabilizado.
+
+
+### 3
+
+MESS ≥ 7: en la serie original, todas las extremidades con esta puntuación fueron amputadas
+
+| Detalles del resultado | |
+| --- | --- |
+| Puntos de isquemia | 2 |
+
+El MESS no decide por sí solo: la indicación de amputación primaria corresponde al equipo (ortopedia, cirugía vascular y plástica), con el paciente estabilizado.
+

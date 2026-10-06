@@ -1,0 +1,199 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "escore-mess",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "295437a78e716688c3f16ffc2ad6e9e50e5e7a19",
+    "oldEngineSha256": "8f07ae325426cfab2797d66164af04f982cb27e51a0ec14d9851a244825cf331",
+    "currentEngineSha256": "7ccb0212004a816139a41148130c590eb55f0e2f9fe57ebd3f871d1249de983a"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Fratura exposta, pulso reduzido, sem choque, 40 anos: 2 + 1 + 0 + 1 = 4",
+      "input": {
+        "energia": "2",
+        "isquemia": "1",
+        "tempo": "0",
+        "choque": "0",
+        "idade": "1"
+      },
+      "publicOutput": {
+        "id": "escore-mess",
+        "main": [
+          "4",
+          "pontos"
+        ],
+        "label": "MESS",
+        "raw": {
+          "score": 4
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 4,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "4",
+          "pontos"
+        ],
+        "label": "MESS",
+        "level": "low",
+        "verdict": "MESS < 7: faixa dos membros salvos na série original",
+        "rows": [
+          [
+            "Pontos de isquemia",
+            "1"
+          ]
+        ],
+        "note": "O MESS não decide sozinho: a indicação de amputação primária é da equipe (ortopedia, vascular e plástica), com o paciente estabilizado.",
+        "raw": {
+          "score": 4
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Alta energia, sem pulso há 8 h (2 × 2), hipotensão transitória, 25 anos: 3 + 4 + 1 + 0 = 8",
+      "input": {
+        "energia": "3",
+        "isquemia": "2",
+        "tempo": "1",
+        "choque": "1",
+        "idade": "0"
+      },
+      "publicOutput": {
+        "id": "escore-mess",
+        "main": [
+          "8",
+          "pontos"
+        ],
+        "label": "MESS",
+        "raw": {
+          "score": 8
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 8,
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "8",
+          "pontos"
+        ],
+        "label": "MESS",
+        "level": "high",
+        "verdict": "MESS ≥ 7: na série original, todos os membros com esse escore foram amputados",
+        "rows": [
+          [
+            "Pontos de isquemia",
+            "4 (dobrados: isquemia &gt; 6 h)"
+          ]
+        ],
+        "note": "O MESS não decide sozinho: a indicação de amputação primária é da equipe (ortopedia, vascular e plástica), com o paciente estabilizado.",
+        "raw": {
+          "score": 8
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Limite: alta energia, sem pulso &lt; 6 h, hipotensão transitória, 45 anos: 3 + 2 + 1 + 1 = 7",
+      "input": {
+        "energia": "3",
+        "isquemia": "2",
+        "tempo": "0",
+        "choque": "1",
+        "idade": "1"
+      },
+      "publicOutput": {
+        "id": "escore-mess",
+        "main": [
+          "7",
+          "pontos"
+        ],
+        "label": "MESS",
+        "raw": {
+          "score": 7
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 7,
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "7",
+          "pontos"
+        ],
+        "label": "MESS",
+        "level": "high",
+        "verdict": "MESS ≥ 7: na série original, todos os membros com esse escore foram amputados",
+        "rows": [
+          [
+            "Pontos de isquemia",
+            "2"
+          ]
+        ],
+        "note": "O MESS não decide sozinho: a indicação de amputação primária é da equipe (ortopedia, vascular e plástica), com o paciente estabilizado.",
+        "raw": {
+          "score": 7
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    }
+  ]
+}
